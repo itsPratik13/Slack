@@ -1,0 +1,4 @@
+create next app 
+npx shadcn@latest init -d
+npx shadcn@latest add button
+make changes in button components as per requirements
