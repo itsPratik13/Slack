@@ -12,12 +12,17 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@radix-ui/react-separator";
 import { SignInFlow } from "../types";
 import { useState } from "react";
+import { useAuthActions } from "@convex-dev/auth/react";
 
 interface SignInCardProps{
     setState:(state:SignInFlow)=>void
 }
 
 export const SignInCard = ({setState}:SignInCardProps) => {
+   const { signIn } = useAuthActions();
+   const UserHandleProvider=(value:"github"|"google")=>{
+     signIn(value)
+   }
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
   return (
@@ -74,7 +79,7 @@ export const SignInCard = ({setState}:SignInCardProps) => {
 
         <Button
           disabled={false}
-          onClick={() => {}}
+          onClick={() => UserHandleProvider("github")}
           variant="outline"
           size="lg"
           className="w-full relative"
