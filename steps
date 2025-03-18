@@ -1,0 +1,50 @@
+npx create-next-app@latest ./
+ npx shadcn@latest init -d   
+ npx shadcn@latest add button
+ 
+ npx shadcn@latest add card input separator
+ npm install react-icons
+ npm install convex
+ npx convex dev
+
+
+1. Background Color:
+Slack has a dark-themed background that is often paired with a lighter background for content areas. You can use #222629 (dark charcoal grey) for the main background, and use lighter shades (like a very light grey or white) for the content areas.
+
+Main Background: #222629 (Dark Charcoal Grey)
+Content Areas / Chat Area: Use a slightly lighter background, such as #474b4f (Muted Dark Grey), to create separation between sections. You can also use #6b6e70 (Greyish Blue) for some sections or highlights to create a modern, subtle contrast.
+Since you want to use white for text, this will work well on darker backgrounds for good contrast and readability.
+
+Primary Text Color: Use white text (#ffffff) on dark backgrounds for titles, messages, and other text.
+Secondary Text Color (for less important text): Use #6b6e70 (Greyish Blue) for secondary text, such as timestamps, user names, etc.
+Titles should be prominent but not overpowering. You can use a bold, accent color for titles or headers, which can be either #61892f (Olive Green) or #86c232 (Bright Lime Green), depending on how vibrant or subtle you want the design.
+
+Primary Title Color: #86c232 (Bright Lime Green) for main headers or titles to make them pop against dark backgrounds.
+Secondary Title Color: #61892f (Olive Green) for subtler titles or section headers.
+css
+Copy
+Slack's buttons typically have a primary action color, like a green button for "Send" or "Invite," and a secondary color for less important actions. For buttons, you can use #86c232 (Bright Lime Green) for primary buttons, and #61892f (Olive Green) for secondary buttons.
+
+Primary Button (e.g., Send, Invite): #86c232 (Bright Lime Green)
+Secondary Button (e.g., Cancel, More Options): #61892f (Olive Green)
+Button Text: Always white (#ffffff) for contrast on dark or vibrant button colors
+Slack’s sidebar has a dark background with vibrant accent colors for buttons and notifications. For the sidebar:
+
+Sidebar Background: Use #222629 (Dark Charcoal Grey) for the sidebar background.
+Sidebar Items / Menu Items: Use #86c232 (Bright Lime Green) for active or highlighted items, and #6b6e70 (Greyish Blue) for inactive items.
+Sidebar Text: Use white text for items inside the sidebar.
+Slack uses accent colors for notifications or highlighting messages.
+
+Notifications: Use #86c232 (Bright Lime Green) or #61892f (Olive Green) for notifications and highlight backgrounds.
+Message Highlights: Use #6b6e70 (Greyish Blue) for unimportant message highlights, and #86c232 for important highlights.
+
+
+for routing:  use default export ie  const page=()=>{return(<div></div>)}    cannot use  export const page=()=>{return(<div></div>)} 
+routing into app directory which is inside src directory
+
+ npm install @convex-dev/auth @auth/core@0.37.0  
+ npx @convex-dev/auth
+
+ middlware.ts always in src folder !!
+ 
+ now register oauth for github, make new app then add client id 
