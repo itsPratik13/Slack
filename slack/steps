@@ -53,3 +53,6 @@ routing into app directory which is inside src directory
 
  add shadcn dropdown menu, avatar and then dialog
  
+ make changes : use-create-workspace.ts, create-workspace-modal.ts,use-create-workspace-modal.ts :also fix the imports
+ layout.tsx  , use-workspace-id.ts(src>hooks) ,workspaces.ts   have to update convex workspace api
+ 
