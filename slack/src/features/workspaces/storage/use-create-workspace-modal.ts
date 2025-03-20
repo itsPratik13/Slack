@@ -1,7 +1,9 @@
-import {atom,useAtom } from "jotai"
+'use client';
 
-const ModalState=atom(false) 
+import { atom, useAtom } from 'jotai';
 
-export const useCreateWorkSpaceModal=()=>{    // global state creation
-    return useAtom(ModalState)
-}
+const createWorkspaceModalAtom = atom(false);
+
+export const useCreateWorkspaceModal = () => {         //global state management
+  return useAtom(createWorkspaceModalAtom);
+};
